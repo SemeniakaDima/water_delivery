@@ -1,0 +1,637 @@
+2025-12-17 14:26:50,810 - __main__ - ERROR - Ошибка конфигурации: BOT_TOKEN не задан в переменных окружения
+2025-12-17 16:56:35,905 - __main__ - ERROR - Ошибка конфигурации: BOT_TOKEN не задан в переменных окружения
+2025-12-17 16:58:50,721 - __main__ - INFO - База данных инициализирована
+2025-12-17 16:58:50,978 - __main__ - INFO - Бот запускается...
+2025-12-17 16:58:51,170 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 16:58:51,222 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 16:59:07,526 - aiogram.event - INFO - Update id=272166082 is handled. Duration 219 ms by bot id=8566444180
+2025-12-17 16:59:16,364 - aiogram.event - INFO - Update id=272166083 is handled. Duration 77 ms by bot id=8566444180
+2025-12-17 16:59:26,451 - aiogram.event - INFO - Update id=272166084 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 16:59:32,424 - aiogram.event - INFO - Update id=272166085 is handled. Duration 77 ms by bot id=8566444180
+2025-12-17 16:59:53,050 - aiogram.event - INFO - Update id=272166086 is handled. Duration 187 ms by bot id=8566444180
+2025-12-17 17:00:06,379 - aiogram.event - INFO - Update id=272166087 is handled. Duration 92 ms by bot id=8566444180
+2025-12-17 17:00:14,573 - aiogram.event - INFO - Update id=272166088 is handled. Duration 141 ms by bot id=8566444180
+2025-12-17 17:00:17,837 - aiogram.event - INFO - Update id=272166089 is handled. Duration 140 ms by bot id=8566444180
+2025-12-17 17:00:31,316 - aiogram.event - INFO - Update id=272166090 is handled. Duration 187 ms by bot id=8566444180
+2025-12-17 17:00:38,607 - aiogram.event - INFO - Update id=272166091 is not handled. Duration 296 ms by bot id=8566444180
+2025-12-17 17:00:38,607 - aiogram.event - ERROR - Cause exception while process update id=272166091 by bot id=8566444180
+AttributeError: 'NoneType' object has no attribute 'admin_ids'
+Traceback (most recent call last):
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\main.py", line 60, in config_middleware
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\handlers\orders.py", line 242, in confirm_order
+    for admin_id in app_config.admin_ids:
+                    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'admin_ids'
+2025-12-17 17:01:14,369 - aiogram.event - INFO - Update id=272166092 is handled. Duration 108 ms by bot id=8566444180
+2025-12-17 17:01:20,298 - aiogram.event - INFO - Update id=272166093 is handled. Duration 92 ms by bot id=8566444180
+2025-12-17 17:01:27,864 - aiogram.event - INFO - Update id=272166094 is handled. Duration 77 ms by bot id=8566444180
+2025-12-17 17:01:36,137 - aiogram.event - INFO - Update id=272166095 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:05:50,963 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 17:05:50,964 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 17:05:50,964 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2025-12-17 17:05:51,215 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:05:57,284 - __main__ - INFO - База данных инициализирована
+2025-12-17 17:05:57,528 - __main__ - INFO - Бот запускается...
+2025-12-17 17:05:57,715 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 17:05:57,766 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:06:28,325 - aiogram.event - INFO - Update id=272166096 is handled. Duration 344 ms by bot id=8566444180
+2025-12-17 17:06:38,818 - aiogram.event - INFO - Update id=272166097 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:06:45,109 - aiogram.event - INFO - Update id=272166098 is handled. Duration 93 ms by bot id=8566444180
+2025-12-17 17:06:47,346 - aiogram.event - INFO - Update id=272166099 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:06:52,034 - aiogram.event - INFO - Update id=272166100 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:07:44,819 - aiogram.event - INFO - Update id=272166101 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:08:02,569 - aiogram.event - INFO - Update id=272166102 is handled. Duration 171 ms by bot id=8566444180
+2025-12-17 17:08:06,519 - aiogram.event - INFO - Update id=272166103 is handled. Duration 156 ms by bot id=8566444180
+2025-12-17 17:08:09,374 - aiogram.event - INFO - Update id=272166104 is handled. Duration 92 ms by bot id=8566444180
+2025-12-17 17:08:18,678 - aiogram.event - INFO - Update id=272166105 is handled. Duration 77 ms by bot id=8566444180
+2025-12-17 17:08:22,018 - aiogram.event - INFO - Update id=272166106 is handled. Duration 108 ms by bot id=8566444180
+2025-12-17 17:08:25,857 - aiogram.event - INFO - Update id=272166107 is not handled. Duration 250 ms by bot id=8566444180
+2025-12-17 17:08:25,857 - aiogram.event - ERROR - Cause exception while process update id=272166107 by bot id=8566444180
+AttributeError: 'NoneType' object has no attribute 'admin_ids'
+Traceback (most recent call last):
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\main.py", line 60, in config_middleware
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\handlers\orders.py", line 242, in confirm_order
+    for admin_id in app_config.admin_ids:
+                    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'admin_ids'
+2025-12-17 17:09:21,970 - aiogram.event - INFO - Update id=272166108 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:09:26,268 - aiogram.event - INFO - Update id=272166109 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:09:35,631 - aiogram.event - INFO - Update id=272166110 is handled. Duration 62 ms by bot id=8566444180
+2025-12-17 17:09:45,428 - aiogram.event - INFO - Update id=272166111 is handled. Duration 77 ms by bot id=8566444180
+2025-12-17 17:10:15,604 - aiogram.event - INFO - Update id=272166112 is handled. Duration 171 ms by bot id=8566444180
+2025-12-17 17:10:28,381 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 17:10:28,382 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 17:10:28,382 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2025-12-17 17:10:28,646 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:10:32,627 - __main__ - INFO - База данных инициализирована
+2025-12-17 17:10:32,871 - __main__ - INFO - Бот запускается...
+2025-12-17 17:10:33,027 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 17:10:33,078 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:10:39,945 - aiogram.event - INFO - Update id=272166113 is handled. Duration 219 ms by bot id=8566444180
+2025-12-17 17:10:48,080 - aiogram.event - INFO - Update id=272166114 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:10:51,272 - aiogram.event - INFO - Update id=272166115 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:10:53,550 - aiogram.event - INFO - Update id=272166116 is handled. Duration 92 ms by bot id=8566444180
+2025-12-17 17:10:56,941 - aiogram.event - INFO - Update id=272166117 is handled. Duration 218 ms by bot id=8566444180
+2025-12-17 17:11:18,381 - aiogram.event - INFO - Update id=272166118 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:11:20,566 - aiogram.event - INFO - Update id=272166119 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:12:17,797 - aiogram.event - INFO - Update id=272166120 is handled. Duration 358 ms by bot id=8566444180
+2025-12-17 17:12:28,141 - aiogram.event - INFO - Update id=272166121 is handled. Duration 312 ms by bot id=8566444180
+2025-12-17 17:12:34,949 - aiogram.event - INFO - Update id=272166122 is handled. Duration 219 ms by bot id=8566444180
+2025-12-17 17:12:38,659 - aiogram.event - INFO - Update id=272166123 is handled. Duration 328 ms by bot id=8566444180
+2025-12-17 17:13:26,313 - aiogram.event - INFO - Update id=272166124 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:17:32,720 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 17:17:32,721 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 17:17:32,721 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2025-12-17 17:17:32,973 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:17:44,233 - __main__ - INFO - База данных инициализирована
+2025-12-17 17:17:44,476 - __main__ - INFO - Бот запускается...
+2025-12-17 17:17:44,673 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 17:17:44,727 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:18:03,447 - aiogram.event - INFO - Update id=272166125 is handled. Duration 203 ms by bot id=8566444180
+2025-12-17 17:18:06,136 - aiogram.event - INFO - Update id=272166126 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:18:07,630 - aiogram.event - INFO - Update id=272166127 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:18:09,706 - aiogram.event - INFO - Update id=272166128 is handled. Duration 109 ms by bot id=8566444180
+2025-12-17 17:18:32,528 - aiogram.event - INFO - Update id=272166129 is handled. Duration 141 ms by bot id=8566444180
+2025-12-17 17:18:36,729 - aiogram.event - INFO - Update id=272166130 is handled. Duration 343 ms by bot id=8566444180
+2025-12-17 17:20:57,176 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 17:20:57,177 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 17:20:57,177 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2025-12-17 17:20:57,430 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:21:03,993 - __main__ - INFO - База данных инициализирована
+2025-12-17 17:21:04,238 - __main__ - INFO - Бот запускается...
+2025-12-17 17:21:04,421 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 17:21:04,472 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:21:16,154 - aiogram.event - INFO - Update id=272166131 is handled. Duration 203 ms by bot id=8566444180
+2025-12-17 17:21:17,477 - aiogram.event - INFO - Update id=272166132 is handled. Duration 140 ms by bot id=8566444180
+2025-12-17 17:21:18,949 - aiogram.event - INFO - Update id=272166133 is handled. Duration 109 ms by bot id=8566444180
+2025-12-17 17:21:20,383 - aiogram.event - INFO - Update id=272166134 is handled. Duration 233 ms by bot id=8566444180
+2025-12-17 17:21:21,652 - handlers.orders - ERROR - Помилка відправки в чат -1002682380858: 'NoneType' object has no attribute 'send_message'
+2025-12-17 17:21:21,652 - aiogram.event - INFO - Update id=272166135 is handled. Duration 282 ms by bot id=8566444180
+2025-12-17 17:22:06,104 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 17:22:06,105 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 17:22:06,105 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2025-12-17 17:22:06,364 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:22:13,159 - __main__ - INFO - База данных инициализирована
+2025-12-17 17:22:13,404 - __main__ - INFO - Бот запускается...
+2025-12-17 17:22:13,558 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 17:22:13,608 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 17:22:17,785 - aiogram.event - INFO - Update id=272166136 is handled. Duration 203 ms by bot id=8566444180
+2025-12-17 17:22:18,855 - aiogram.event - INFO - Update id=272166137 is handled. Duration 109 ms by bot id=8566444180
+2025-12-17 17:22:20,219 - aiogram.event - INFO - Update id=272166138 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:22:22,339 - aiogram.event - INFO - Update id=272166139 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:22:23,938 - handlers.orders - INFO - Замовлення #6 надіслано в чат -1002682380858
+2025-12-17 17:22:23,938 - aiogram.event - INFO - Update id=272166140 is handled. Duration 562 ms by bot id=8566444180
+2025-12-17 17:22:36,379 - aiogram.event - INFO - Update id=272166141 is handled. Duration 280 ms by bot id=8566444180
+2025-12-17 17:37:26,523 - aiogram.event - INFO - Update id=272166142 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:37:40,152 - aiogram.event - INFO - Update id=272166143 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:38:04,089 - aiogram.event - INFO - Update id=272166144 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:38:11,664 - aiogram.event - INFO - Update id=272166145 is handled. Duration 92 ms by bot id=8566444180
+2025-12-17 17:38:14,771 - aiogram.event - INFO - Update id=272166146 is handled. Duration 62 ms by bot id=8566444180
+2025-12-17 17:38:16,788 - aiogram.event - INFO - Update id=272166147 is handled. Duration 77 ms by bot id=8566444180
+2025-12-17 17:38:27,899 - aiogram.event - INFO - Update id=272166148 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:38:36,693 - handlers.orders - INFO - Замовлення #7 надіслано в чат -1002682380858
+2025-12-17 17:38:36,693 - aiogram.event - INFO - Update id=272166149 is handled. Duration 641 ms by bot id=8566444180
+2025-12-17 17:39:35,527 - aiogram.event - INFO - Update id=272166150 is handled. Duration 235 ms by bot id=8566444180
+2025-12-17 17:41:44,044 - aiogram.event - INFO - Update id=272166151 is handled. Duration 77 ms by bot id=8566444180
+2025-12-17 17:42:23,344 - aiogram.event - INFO - Update id=272166152 is handled. Duration 109 ms by bot id=8566444180
+2025-12-17 17:42:32,551 - aiogram.event - INFO - Update id=272166153 is handled. Duration 139 ms by bot id=8566444180
+2025-12-17 17:43:01,107 - aiogram.event - INFO - Update id=272166154 is handled. Duration 187 ms by bot id=8566444180
+2025-12-17 17:43:05,609 - aiogram.event - INFO - Update id=272166155 is handled. Duration 155 ms by bot id=8566444180
+2025-12-17 17:43:10,385 - aiogram.event - INFO - Update id=272166156 is handled. Duration 266 ms by bot id=8566444180
+2025-12-17 17:43:21,708 - aiogram.event - INFO - Update id=272166157 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:43:36,891 - aiogram.event - INFO - Update id=272166158 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:43:39,997 - handlers.orders - INFO - Замовлення #8 надіслано в чат -1002682380858
+2025-12-17 17:43:39,997 - aiogram.event - INFO - Update id=272166159 is handled. Duration 546 ms by bot id=8566444180
+2025-12-17 17:43:55,693 - aiogram.event - INFO - Update id=272166160 is handled. Duration 171 ms by bot id=8566444180
+2025-12-17 17:43:57,130 - aiogram.event - INFO - Update id=272166161 is handled. Duration 233 ms by bot id=8566444180
+2025-12-17 17:43:59,560 - aiogram.event - INFO - Update id=272166162 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:44:54,238 - aiogram.event - INFO - Update id=272166163 is handled. Duration 234 ms by bot id=8566444180
+2025-12-17 17:45:01,013 - aiogram.event - INFO - Update id=272166164 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:45:16,333 - aiogram.event - INFO - Update id=272166165 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:45:29,228 - aiogram.event - INFO - Update id=272166166 is handled. Duration 202 ms by bot id=8566444180
+2025-12-17 17:45:41,003 - aiogram.event - INFO - Update id=272166167 is handled. Duration 203 ms by bot id=8566444180
+2025-12-17 17:45:48,464 - aiogram.event - INFO - Update id=272166168 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 17:45:56,423 - aiogram.event - INFO - Update id=272166169 is handled. Duration 171 ms by bot id=8566444180
+2025-12-17 17:46:10,475 - aiogram.event - INFO - Update id=272166170 is handled. Duration 93 ms by bot id=8566444180
+2025-12-17 17:46:14,835 - aiogram.event - INFO - Update id=272166171 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:46:19,459 - aiogram.event - INFO - Update id=272166172 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:46:40,997 - aiogram.event - INFO - Update id=272166173 is handled. Duration 108 ms by bot id=8566444180
+2025-12-17 17:46:52,649 - handlers.orders - INFO - Замовлення #9 надіслано в чат -1002682380858
+2025-12-17 17:46:52,649 - aiogram.event - INFO - Update id=272166174 is handled. Duration 703 ms by bot id=8566444180
+2025-12-17 17:47:14,713 - aiogram.event - INFO - Update id=272166175 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:47:17,152 - aiogram.event - INFO - Update id=272166176 is handled. Duration 187 ms by bot id=8566444180
+2025-12-17 17:47:19,021 - aiogram.event - INFO - Update id=272166177 is handled. Duration 62 ms by bot id=8566444180
+2025-12-17 17:47:19,446 - aiogram.event - INFO - Update id=272166178 is handled. Duration 250 ms by bot id=8566444180
+2025-12-17 17:47:25,137 - aiogram.event - INFO - Update id=272166179 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 17:47:28,482 - handlers.orders - INFO - Замовлення #10 надіслано в чат -1002682380858
+2025-12-17 17:47:28,482 - aiogram.event - INFO - Update id=272166180 is handled. Duration 562 ms by bot id=8566444180
+2025-12-17 17:49:58,002 - aiogram.event - INFO - Update id=272166181 is handled. Duration 108 ms by bot id=8566444180
+2025-12-17 17:50:00,951 - aiogram.event - INFO - Update id=272166182 is handled. Duration 125 ms by bot id=8566444180
+2025-12-17 17:50:05,473 - aiogram.event - INFO - Update id=272166183 is handled. Duration 62 ms by bot id=8566444180
+2025-12-17 17:50:08,206 - aiogram.event - INFO - Update id=272166184 is handled. Duration 62 ms by bot id=8566444180
+2025-12-17 17:57:07,934 - aiogram.event - INFO - Update id=272166185 is handled. Duration 750 ms by bot id=8566444180
+2025-12-17 17:59:51,258 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 17:59:51,259 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 17:59:51,259 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2025-12-17 17:59:51,516 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 18:00:53,108 - __main__ - INFO - База данных инициализирована
+2025-12-17 18:00:53,352 - __main__ - INFO - Бот запускается...
+2025-12-17 18:00:53,547 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 18:00:53,602 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 18:01:19,413 - handlers.admin - INFO - Сповіщення про статус замовлення #10 надіслано користувачу 7282516249
+2025-12-17 18:01:19,413 - aiogram.event - INFO - Update id=272166186 is handled. Duration 483 ms by bot id=8566444180
+2025-12-17 18:11:53,631 - handlers.admin - INFO - Сповіщення про статус замовлення #9 надіслано користувачу 292535609
+2025-12-17 18:11:53,631 - aiogram.event - INFO - Update id=272166187 is handled. Duration 967 ms by bot id=8566444180
+2025-12-17 18:16:24,674 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 18:16:24,675 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 18:16:24,675 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2025-12-17 18:16:24,935 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 18:16:29,119 - __main__ - INFO - База данных инициализирована
+2025-12-17 18:16:29,366 - __main__ - INFO - Бот запускается...
+2025-12-17 18:16:29,575 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 18:16:29,631 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-17 18:17:51,490 - aiogram.event - INFO - Update id=272166188 is not handled. Duration 0 ms by bot id=8566444180
+2025-12-17 18:18:05,154 - aiogram.event - INFO - Update id=272166189 is handled. Duration 375 ms by bot id=8566444180
+2025-12-17 18:18:08,990 - aiogram.event - INFO - Update id=272166190 is handled. Duration 171 ms by bot id=8566444180
+2025-12-17 18:18:10,828 - aiogram.event - INFO - Update id=272166191 is handled. Duration 78 ms by bot id=8566444180
+2025-12-17 18:18:28,760 - aiogram.event - INFO - Update id=272166192 is handled. Duration 94 ms by bot id=8566444180
+2025-12-17 18:18:38,455 - handlers.orders - INFO - Замовлення #11 надіслано в чат -1002682380858
+2025-12-17 18:18:38,455 - aiogram.event - INFO - Update id=272166193 is handled. Duration 516 ms by bot id=8566444180
+2025-12-17 18:18:46,969 - handlers.admin - INFO - Сповіщення про статус замовлення #11 надіслано користувачу 292535609
+2025-12-17 18:18:46,969 - aiogram.event - INFO - Update id=272166194 is handled. Duration 312 ms by bot id=8566444180
+2025-12-17 18:19:17,753 - aiogram.event - INFO - Update id=272166195 is handled. Duration 108 ms by bot id=8566444180
+2025-12-17 18:19:21,613 - aiogram.event - INFO - Update id=272166196 is handled. Duration 109 ms by bot id=8566444180
+2025-12-17 18:19:23,302 - aiogram.event - INFO - Update id=272166197 is handled. Duration 77 ms by bot id=8566444180
+2025-12-17 18:19:25,280 - aiogram.event - INFO - Update id=272166198 is handled. Duration 172 ms by bot id=8566444180
+2025-12-17 18:19:27,662 - aiogram.event - INFO - Update id=272166199 is handled. Duration 157 ms by bot id=8566444180
+2025-12-17 18:19:29,852 - handlers.admin - INFO - Сповіщення про статус замовлення #10 надіслано користувачу 7282516249
+2025-12-17 18:19:29,852 - aiogram.event - INFO - Update id=272166200 is handled. Duration 609 ms by bot id=8566444180
+2025-12-17 18:19:30,474 - handlers.orders - INFO - Замовлення #12 надіслано в чат -1002682380858
+2025-12-17 18:19:30,474 - aiogram.event - INFO - Update id=272166201 is handled. Duration 1109 ms by bot id=8566444180
+2025-12-17 18:19:35,237 - handlers.admin - INFO - Сповіщення про статус замовлення #12 надіслано користувачу 292535609
+2025-12-17 18:19:35,237 - aiogram.event - INFO - Update id=272166202 is handled. Duration 359 ms by bot id=8566444180
+2025-12-17 20:24:45,359 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2025-12-17 20:24:45,359 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2025-12-17 20:24:56,584 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8566444180)
+2025-12-19 11:22:29,471 - __main__ - INFO - База данных инициализирована
+2025-12-19 11:22:29,727 - __main__ - INFO - Бот запускается...
+2025-12-19 11:22:30,008 - aiogram.dispatcher - INFO - Start polling
+2025-12-19 11:22:30,066 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'waterkhua'
+2025-12-19 11:22:50,500 - aiogram.event - INFO - Update id=272166203 is handled. Duration 405 ms by bot id=8566444180
+2025-12-19 11:22:55,250 - aiogram.event - INFO - Update id=272166204 is handled. Duration 77 ms by bot id=8566444180
+2025-12-19 11:22:56,974 - aiogram.event - INFO - Update id=272166205 is handled. Duration 108 ms by bot id=8566444180
+2025-12-19 11:22:59,564 - aiogram.event - INFO - Update id=272166206 is handled. Duration 77 ms by bot id=8566444180
+2025-12-19 11:23:02,485 - aiogram.event - INFO - Update id=272166207 is handled. Duration 188 ms by bot id=8566444180
+2025-12-19 11:23:04,939 - handlers.orders - INFO - Замовлення #13 надіслано в чат -1002682380858
+2025-12-19 11:23:04,939 - aiogram.event - INFO - Update id=272166208 is handled. Duration 641 ms by bot id=8566444180
+2025-12-19 11:23:11,819 - handlers.admin - INFO - Сповіщення про статус замовлення #13 надіслано користувачу 311804962
+2025-12-19 11:23:11,819 - aiogram.event - INFO - Update id=272166209 is handled. Duration 438 ms by bot id=8566444180
+2025-12-19 11:28:42,998 - aiogram.event - INFO - Update id=272166210 is handled. Duration 108 ms by bot id=8566444180
+2025-12-19 11:28:44,604 - aiogram.event - INFO - Update id=272166211 is handled. Duration 125 ms by bot id=8566444180
+2025-12-19 11:28:45,974 - aiogram.event - INFO - Update id=272166212 is handled. Duration 94 ms by bot id=8566444180
+2025-12-19 11:28:47,306 - aiogram.event - INFO - Update id=272166213 is handled. Duration 125 ms by bot id=8566444180
+2025-12-19 11:28:48,447 - aiogram.event - INFO - Update id=272166214 is handled. Duration 282 ms by bot id=8566444180
+2025-12-19 11:28:50,251 - handlers.orders - INFO - Замовлення #14 надіслано в чат -1002682380858
+2025-12-19 11:28:50,251 - aiogram.event - INFO - Update id=272166215 is handled. Duration 764 ms by bot id=8566444180
+2025-12-19 11:28:55,984 - handlers.admin - INFO - Сповіщення про статус замовлення #14 надіслано користувачу 311804962
+2025-12-19 11:28:55,984 - aiogram.event - INFO - Update id=272166216 is handled. Duration 313 ms by bot id=8566444180
+2025-12-26 20:12:48,668 - __main__ - INFO - База данных инициализирована
+2025-12-26 20:12:48,950 - __main__ - INFO - Бот запускается...
+2025-12-26 20:12:49,135 - aiogram.dispatcher - INFO - Start polling
+2025-12-26 20:12:49,185 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2025-12-26 20:14:07,364 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-26 20:14:07,367 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-26 20:14:07,378 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2025-12-26 20:14:07,639 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:12:57,328 - __main__ - INFO - База данных инициализирована
+2026-01-03 20:12:57,609 - __main__ - INFO - Бот запускается...
+2026-01-03 20:12:58,204 - aiogram.dispatcher - INFO - Start polling
+2026-01-03 20:12:58,261 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:13:12,332 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+2026-01-03 20:13:12,339 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2026-01-03 20:13:23,512 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8566444180)
+2026-01-03 20:15:50,979 - aiogram.event - INFO - Update id=272166217 is handled. Duration 188 ms by bot id=8566444180
+2026-01-03 20:26:18,431 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-03 20:26:18,432 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-03 20:26:18,433 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2026-01-03 20:26:18,694 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:26:22,707 - __main__ - INFO - База данных инициализирована
+2026-01-03 20:26:22,951 - __main__ - INFO - Бот запускается...
+2026-01-03 20:26:23,147 - aiogram.dispatcher - INFO - Start polling
+2026-01-03 20:26:23,202 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:26:44,642 - aiogram.event - INFO - Update id=272166218 is handled. Duration 188 ms by bot id=8566444180
+2026-01-03 20:26:58,291 - aiogram.event - INFO - Update id=272166219 is handled. Duration 77 ms by bot id=8566444180
+2026-01-03 20:27:09,390 - aiogram.event - INFO - Update id=272166220 is handled. Duration 265 ms by bot id=8566444180
+2026-01-03 20:27:47,131 - aiogram.event - INFO - Update id=272166221 is handled. Duration 593 ms by bot id=8566444180
+2026-01-03 20:30:07,156 - aiogram.event - INFO - Update id=272166222 is handled. Duration 250 ms by bot id=8566444180
+2026-01-03 20:30:12,897 - handlers.admin - INFO - Сповіщення про статус замовлення #4 надіслано користувачу 311804962
+2026-01-03 20:30:12,898 - aiogram.event - INFO - Update id=272166223 is handled. Duration 375 ms by bot id=8566444180
+2026-01-03 20:30:15,007 - handlers.admin - INFO - Сповіщення про статус замовлення #5 надіслано користувачу 311804962
+2026-01-03 20:30:15,008 - aiogram.event - INFO - Update id=272166224 is handled. Duration 296 ms by bot id=8566444180
+2026-01-03 20:30:18,268 - aiogram.event - INFO - Update id=272166225 is handled. Duration 78 ms by bot id=8566444180
+2026-01-03 20:32:29,330 - aiogram.event - INFO - Update id=272166226 is handled. Duration 77 ms by bot id=8566444180
+2026-01-03 20:33:25,974 - aiogram.event - INFO - Update id=272166227 is handled. Duration 78 ms by bot id=8566444180
+2026-01-03 20:36:16,743 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-03 20:36:16,744 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-03 20:36:16,744 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2026-01-03 20:36:16,999 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:36:27,881 - __main__ - INFO - База данных инициализирована
+2026-01-03 20:36:28,128 - __main__ - INFO - Бот запускается...
+2026-01-03 20:36:28,309 - aiogram.dispatcher - INFO - Start polling
+2026-01-03 20:36:28,360 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:37:06,163 - aiogram.event - INFO - Update id=272166228 is handled. Duration 171 ms by bot id=8566444180
+2026-01-03 20:37:17,919 - aiogram.event - INFO - Update id=272166229 is handled. Duration 94 ms by bot id=8566444180
+2026-01-03 20:37:21,932 - aiogram.event - INFO - Update id=272166230 is handled. Duration 77 ms by bot id=8566444180
+2026-01-03 20:37:25,072 - aiogram.event - INFO - Update id=272166231 is handled. Duration 108 ms by bot id=8566444180
+2026-01-03 20:37:35,085 - aiogram.event - INFO - Update id=272166232 is handled. Duration 264 ms by bot id=8566444180
+2026-01-03 20:37:41,737 - aiogram.event - INFO - Update id=272166233 is handled. Duration 94 ms by bot id=8566444180
+2026-01-03 20:37:43,342 - aiogram.event - INFO - Update id=272166234 is handled. Duration 187 ms by bot id=8566444180
+2026-01-03 20:37:46,976 - aiogram.event - INFO - Update id=272166235 is handled. Duration 78 ms by bot id=8566444180
+2026-01-03 20:37:52,510 - aiogram.event - INFO - Update id=272166236 is handled. Duration 171 ms by bot id=8566444180
+2026-01-03 20:37:54,196 - aiogram.event - INFO - Update id=272166237 is handled. Duration 77 ms by bot id=8566444180
+2026-01-03 20:37:55,725 - aiogram.event - INFO - Update id=272166238 is handled. Duration 62 ms by bot id=8566444180
+2026-01-03 20:37:57,872 - aiogram.event - INFO - Update id=272166239 is handled. Duration 78 ms by bot id=8566444180
+2026-01-03 20:38:01,266 - aiogram.event - INFO - Update id=272166240 is handled. Duration 171 ms by bot id=8566444180
+2026-01-03 20:38:02,536 - aiogram.event - INFO - Update id=272166241 is handled. Duration 79 ms by bot id=8566444180
+2026-01-03 20:38:03,594 - aiogram.event - INFO - Update id=272166242 is handled. Duration 94 ms by bot id=8566444180
+2026-01-03 20:38:08,187 - aiogram.event - INFO - Update id=272166243 is handled. Duration 140 ms by bot id=8566444180
+2026-01-03 20:38:09,555 - aiogram.event - INFO - Update id=272166244 is handled. Duration 93 ms by bot id=8566444180
+2026-01-03 20:38:11,982 - aiogram.event - INFO - Update id=272166245 is handled. Duration 157 ms by bot id=8566444180
+2026-01-03 20:38:18,516 - aiogram.event - INFO - Update id=272166246 is handled. Duration 78 ms by bot id=8566444180
+2026-01-03 20:38:19,815 - aiogram.event - INFO - Update id=272166247 is handled. Duration 62 ms by bot id=8566444180
+2026-01-03 20:38:24,435 - aiogram.event - INFO - Update id=272166248 is handled. Duration 77 ms by bot id=8566444180
+2026-01-03 20:38:27,934 - aiogram.event - INFO - Update id=272166249 is handled. Duration 93 ms by bot id=8566444180
+2026-01-03 20:38:32,357 - aiogram.event - INFO - Update id=272166250 is handled. Duration 110 ms by bot id=8566444180
+2026-01-03 20:38:37,752 - aiogram.event - INFO - Update id=272166251 is handled. Duration 125 ms by bot id=8566444180
+2026-01-03 20:38:40,425 - aiogram.event - INFO - Update id=272166252 is handled. Duration 77 ms by bot id=8566444180
+2026-01-03 20:38:46,060 - aiogram.event - INFO - Update id=272166253 is handled. Duration 77 ms by bot id=8566444180
+2026-01-03 20:38:48,404 - aiogram.event - INFO - Update id=272166254 is handled. Duration 110 ms by bot id=8566444180
+2026-01-03 20:38:53,178 - handlers.orders - INFO - Замовлення #15 надіслано в чат -1002682380858
+2026-01-03 20:38:53,178 - aiogram.event - INFO - Update id=272166255 is handled. Duration 484 ms by bot id=8566444180
+2026-01-03 20:42:13,023 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-03 20:42:13,023 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-03 20:42:13,024 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2026-01-03 20:42:13,277 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:52:35,958 - __main__ - INFO - База данных инициализирована
+2026-01-03 20:52:36,203 - __main__ - INFO - Бот запускается...
+2026-01-03 20:52:36,385 - aiogram.dispatcher - INFO - Start polling
+2026-01-03 20:52:36,435 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:52:47,232 - aiogram.event - INFO - Update id=272166256 is not handled. Duration 0 ms by bot id=8566444180
+2026-01-03 20:52:47,233 - aiogram.event - ERROR - Cause exception while process update id=272166256 by bot id=8566444180
+AttributeError: 'sqlite3.Row' object has no attribute 'get'
+Traceback (most recent call last):
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\main.py", line 60, in config_middleware
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\handlers\common.py", line 20, in cmd_start
+    user = await get_user(message.from_user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\database.py", line 164, in get_user
+    return _parse_user(row) if row else None
+           ^^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\database.py", line 94, in _parse_user
+    custom_price=row.get("custom_price"),
+                 ^^^^^^^
+AttributeError: 'sqlite3.Row' object has no attribute 'get'
+2026-01-03 20:54:02,462 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-03 20:54:02,463 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-03 20:54:02,463 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2026-01-03 20:54:02,720 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:54:06,472 - __main__ - INFO - База данных инициализирована
+2026-01-03 20:54:06,718 - __main__ - INFO - Бот запускается...
+2026-01-03 20:54:06,870 - aiogram.dispatcher - INFO - Start polling
+2026-01-03 20:54:06,919 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:54:11,550 - aiogram.event - INFO - Update id=272166257 is handled. Duration 171 ms by bot id=8566444180
+2026-01-03 20:54:22,090 - aiogram.event - INFO - Update id=272166258 is handled. Duration 78 ms by bot id=8566444180
+2026-01-03 20:54:31,317 - aiogram.event - INFO - Update id=272166259 is handled. Duration 93 ms by bot id=8566444180
+2026-01-03 20:54:33,007 - aiogram.event - INFO - Update id=272166260 is handled. Duration 78 ms by bot id=8566444180
+2026-01-03 20:54:33,969 - aiogram.event - INFO - Update id=272166261 is handled. Duration 125 ms by bot id=8566444180
+2026-01-03 20:54:35,436 - aiogram.event - INFO - Update id=272166262 is handled. Duration 110 ms by bot id=8566444180
+2026-01-03 20:54:36,448 - aiogram.event - INFO - Update id=272166263 is not handled. Duration 14 ms by bot id=8566444180
+2026-01-03 20:54:36,448 - aiogram.event - ERROR - Cause exception while process update id=272166263 by bot id=8566444180
+AttributeError: 'NoneType' object has no attribute 'full_name'
+Traceback (most recent call last):
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\main.py", line 60, in config_middleware
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 189, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\AI_work\water_delivery_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "e:\AI_work\water_delivery_bot\handlers\orders.py", line 208, in skip_comment
+    await show_confirmation(callback.message, state, config, edit=True)
+  File "e:\AI_work\water_delivery_bot\handlers\orders.py", line 236, in show_confirmation
+    f"👤 {user.full_name}\n"
+          ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'full_name'
+2026-01-03 20:56:23,654 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-03 20:56:23,655 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-03 20:56:23,655 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2026-01-03 20:56:23,911 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:56:27,840 - __main__ - INFO - База данных инициализирована
+2026-01-03 20:56:28,090 - __main__ - INFO - Бот запускается...
+2026-01-03 20:56:28,274 - aiogram.dispatcher - INFO - Start polling
+2026-01-03 20:56:28,323 - aiogram.dispatcher - INFO - Run polling for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'
+2026-01-03 20:56:38,995 - aiogram.event - INFO - Update id=272166264 is handled. Duration 203 ms by bot id=8566444180
+2026-01-03 20:57:19,371 - handlers.admin - INFO - Сповіщення про статус замовлення #15 надіслано користувачу 311804962
+2026-01-03 20:57:19,371 - aiogram.event - INFO - Update id=272166265 is handled. Duration 312 ms by bot id=8566444180
+2026-01-03 20:57:22,490 - aiogram.event - INFO - Update id=272166266 is handled. Duration 78 ms by bot id=8566444180
+2026-01-03 20:57:25,156 - aiogram.event - INFO - Update id=272166267 is handled. Duration 79 ms by bot id=8566444180
+2026-01-03 20:57:26,634 - aiogram.event - INFO - Update id=272166268 is handled. Duration 94 ms by bot id=8566444180
+2026-01-03 20:57:27,792 - aiogram.event - INFO - Update id=272166269 is handled. Duration 77 ms by bot id=8566444180
+2026-01-03 20:57:29,054 - aiogram.event - INFO - Update id=272166270 is handled. Duration 125 ms by bot id=8566444180
+2026-01-03 20:57:30,226 - aiogram.event - INFO - Update id=272166271 is handled. Duration 94 ms by bot id=8566444180
+2026-01-03 20:57:33,249 - handlers.orders - INFO - Замовлення #16 надіслано в чат -1002682380858
+2026-01-03 20:57:33,249 - aiogram.event - INFO - Update id=272166272 is handled. Duration 514 ms by bot id=8566444180
+2026-01-03 20:57:58,173 - handlers.admin - INFO - Сповіщення про статус замовлення #16 надіслано користувачу 311804962
+2026-01-03 20:57:58,173 - aiogram.event - INFO - Update id=272166273 is handled. Duration 344 ms by bot id=8566444180
+2026-01-03 20:58:31,393 - handlers.admin - INFO - Сповіщення про статус замовлення #16 надіслано користувачу 311804962
+2026-01-03 20:58:31,393 - aiogram.event - INFO - Update id=272166274 is handled. Duration 313 ms by bot id=8566444180
+2026-01-03 20:58:55,028 - aiogram.event - INFO - Update id=272166275 is handled. Duration 265 ms by bot id=8566444180
+2026-01-03 20:58:58,787 - aiogram.event - INFO - Update id=272166276 is handled. Duration 125 ms by bot id=8566444180
+2026-01-03 20:59:12,609 - aiogram.event - INFO - Update id=272166277 is handled. Duration 453 ms by bot id=8566444180
+2026-01-03 21:00:06,260 - aiogram.event - INFO - Update id=272166278 is handled. Duration 94 ms by bot id=8566444180
+2026-01-03 21:00:09,402 - aiogram.event - INFO - Update id=272166279 is handled. Duration 421 ms by bot id=8566444180
+2026-01-03 21:00:28,553 - handlers.admin - INFO - Сповіщення про статус замовлення #3 надіслано користувачу 7282516249
+2026-01-03 21:00:28,553 - aiogram.event - INFO - Update id=272166280 is handled. Duration 311 ms by bot id=8566444180
+2026-01-03 21:00:32,819 - handlers.admin - INFO - Сповіщення про статус замовлення #11 надіслано користувачу 292535609
+2026-01-03 21:00:32,819 - aiogram.event - INFO - Update id=272166281 is handled. Duration 327 ms by bot id=8566444180
+2026-01-03 21:00:34,878 - handlers.admin - INFO - Сповіщення про статус замовлення #7 надіслано користувачу 311804962
+2026-01-03 21:00:34,879 - aiogram.event - INFO - Update id=272166282 is handled. Duration 280 ms by bot id=8566444180
+2026-01-03 21:01:12,703 - aiogram.event - INFO - Update id=272166283 is handled. Duration 170 ms by bot id=8566444180
+2026-01-03 21:01:22,947 - handlers.admin - INFO - Сповіщення про статус замовлення #16 надіслано користувачу 311804962
+2026-01-03 21:01:22,947 - aiogram.event - INFO - Update id=272166284 is handled. Duration 375 ms by bot id=8566444180
+2026-01-03 21:03:10,344 - handlers.admin - INFO - Сповіщення про статус замовлення #15 надіслано користувачу 311804962
+2026-01-03 21:03:10,345 - aiogram.event - INFO - Update id=272166285 is handled. Duration 266 ms by bot id=8566444180
+2026-01-03 21:44:40,260 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-03 21:44:40,261 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-01-03 21:44:40,261 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8566444180)
+2026-01-03 21:44:40,525 - aiogram.dispatcher - INFO - Polling stopped for bot @waterkhua_bot id=8566444180 - 'Замовлення води 19 л ЕФЕКТ'

@@ -1,0 +1,10 @@
+# Токен бота от @BotFather
+BOT_TOKEN=8566444180:AAHJ-yWtc5OqpRbh3cq87uh0Ijn6LCk_Chk
+
+# ID администраторов (через запятую)
+ADMIN_IDS=311804962
+
+# Цены (опционально)
+BOTTLE_PRICE=120
+DELIVERY_PRICE=0
+FREE_DELIVERY_FROM=1
