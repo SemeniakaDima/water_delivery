@@ -108,9 +108,9 @@ async def cmd_contacts(message: Message):
         "📞 <b>Наші контакти</b>\n\n"
         "☎️ Телефон: +38 (068) 811-0-811\n"
         "📱 Viber/Telegram: +38 (068) 811-0-811\n"
-        "📧 Email: water@example.com\n\n"
+        "📧 Email: info@water.kh.ua\n\n"
         "🕐 <b>Час роботи:</b>\n"
-        "Пн-Пт: 9:00 - 20:00\n"
+        "Пн-Пт: 9:00 - 19:00\n"
         "Сб: 10:00 - 18:00\n"
         "Нд: вихідний\n\n"
         "📍 <b>Зона доставки:</b>\n"
@@ -132,3 +132,4 @@ async def cancel_action(message: Message, state: FSMContext):
         "Дію скасовано. Ви в головному меню.",
         reply_markup=main_menu_keyboard(is_registered)
     )
+
